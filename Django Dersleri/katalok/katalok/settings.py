@@ -1,4 +1,7 @@
 import os
+import pymysql
+pymysql.install_as_MySQLdb()
+
 """
 Django settings for katalok project.
 
@@ -77,10 +80,16 @@ WSGI_APPLICATION = 'katalok.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'katalok_db',
+        'USER': 'root',
+        'PASSWORD': 'deneme1234',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
+
 
 
 # Password validation
