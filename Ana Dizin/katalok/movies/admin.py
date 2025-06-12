@@ -11,4 +11,3 @@ class MovieAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Movie,MovieAdmin)
- 

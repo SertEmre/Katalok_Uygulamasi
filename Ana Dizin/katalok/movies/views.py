@@ -3,7 +3,10 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    return render(request,'movies/list.html')
+    context = {
+        'name': 'Emre Sert'
+    }
+    return render(request,'movies/list.html',context)
 
 def detail(request):
     return render(request,'movies/detail.html')
