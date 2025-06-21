@@ -1,0 +1,10 @@
+<h2>Kayıt Ol</h2>
+<form method="post">
+  {% csrf_token %}
+  <input type="text" name="kullanici_adi" placeholder="Kullanıcı Adı"><br>
+  <input type="email" name="eposta" placeholder="E-posta"><br>
+  <input type="password" name="sifre" placeholder="Şifre"><br>
+  <input type="password" name="sifre2" placeholder="Şifre Tekrar"><br>
+  <button type="submit">Kayıt Ol</button>
+</form>
+<a href="{% url 'giris' %}">Giriş Yap</a>

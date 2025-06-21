@@ -8,4 +8,6 @@ urlpatterns = [
     path('movies/', include('movies.urls')),
     path('user/', include('user.urls')),
     path('admin/', admin.site.urls),
+    path('', include('hesaplar.urls')),
+
 ]
